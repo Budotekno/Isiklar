@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+
+    <script>
+        function farKontrol(){
+            if(document.getElementById("far").value=="Farları Aç"){
+                document.getElementById("far").value="Farları Kapat";
+                farAc();
+            }
+            else {
+                document.getElementById("far").value="Farları Aç";
+                farKapat();
+            }
+        }
+        function farAc(){
+            document.getElementById("araba").src="img/bmw1.PNG";
+            
+        }
+
+        function farKapat(){
+            document.getElementById("araba").src="img/bmw.PNG";
+            
+        }
+      
+    </script>
+
+    <style>
+        .araba{
+            width: 500px;
+            margin: 50px auto;
+        }
+        #far{
+            width: 100px;
+            height: 35px;
+            cursor: pointer;
+             
+        }
+
+        body{
+            background-color: #98ddca;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="araba">
+    
+        <img src="img/bmw.PNG" alt="" id="araba" width="500">
+
+
+        <br><br>
+        <input type="button" value="Farları Aç" id="far" onclick="farKontrol()">
+       
+       
+    
+    </div>
+    
+
+   
+    
+</body>
+</html>
